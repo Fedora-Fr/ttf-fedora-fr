@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Freedom Purple",
+  "slug": "freedom-purple",
+  "blockTypes": [
+		"core/heading",
+		"core/paragraph",
+		"core/columns",
+		"core/group",
+		"core/button"
+  ],
+  "styles": {
+    "typography": {
+      "fontSize": "var:preset|font-size|medium",
+      "letterSpacing": "normal"
+    },
+    "spacing": {
+      "padding": {
+        "top": "0.5rem",
+        "right": "0.6rem",
+        "bottom": "0.5rem",
+        "left": "0.6rem"
+      }
+    },
+    "elements": {
+      "link": {
+        "typography": {
+          "textDecoration": "none"
+        }
+      }
+    }
+  }
+}

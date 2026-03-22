@@ -1,0 +1,7 @@
+.site-header {
+  color: var(--wp--preset--color--base);
+  background-color: var(--wp--preset--color--accent-1);
+  background-image: linear-gradient(to right, var(--wp--preset--color--accent-3), var(--wp--preset--color--accent-2));
+  font-family: var(--wp--preset--font-family--montserrat);
+  font-weight: 800;
+}

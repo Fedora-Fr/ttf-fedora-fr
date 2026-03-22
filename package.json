@@ -1,0 +1,42 @@
+{
+    "name": "ttf-fedora-fr",
+    "title": "TTF Fedora-Fr",
+    "description": "WordPress Twenty Twenty Five child theme.",
+    "type": "module",
+    "homepage": "https://www.fedora-fr.org",
+    "author": {
+        "name": "Guillaume Kulakowski",
+        "url": "https://blog.kulakowski.fr"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Fedora-Fr/ttf-fedora-fr"
+    },
+    "keywords": [
+        "wordpress",
+        "theme"
+    ],
+    "bugs": {
+        "url": "https://github.com/Fedora-Fr/ttf-fedora-fr/issues"
+    },
+    "devDependencies": {
+        "@wordpress/eslint-plugin": "^24.3.0",
+        "@wordpress/prettier-config": "^4.41.0",
+        "@wordpress/stylelint-config": "^23.33.0",
+        "prettier": "^3.8.1",
+        "vite": "^8.0.0"
+    },
+    "scripts": {
+        "eslint": "eslint ./",
+        "eslint:fix": "eslint ./",
+        "stylelint": "stylelint assets/src/css/**.*css",
+        "stylelint:fix": "stylelint assets/src/css/**.*css --fix",
+        "dev": "vite build --watch",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@fontsource-variable/montserrat": "^5.2.8",
+        "@fontsource-variable/open-sans": "^5.2.7"
+    }
+}

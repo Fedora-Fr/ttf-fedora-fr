@@ -1,0 +1,95 @@
+.is-style-dark-fedora-blue {
+  background-color: var(--wp--preset--color--accent-1-percent-10);
+  color: var(--wp--preset--color--accent-1);
+  border: 1px solid var(--wp--preset--color--accent-1);
+  border-radius: 10px;
+}
+
+.is-style-dark-fedora-blue-box {
+  border: 1px solid var(--wp--preset--color--accent-1);
+  border-radius: 15px 0;
+  box-shadow: var(--wp--preset--color--accent-1) 6px 6px 0 0;
+}
+
+.is-style-fedora-blue {
+  background-color: var(--wp--preset--color--accent-2-percent-10);
+  color: var(--wp--preset--color--accent-2);
+  border: 1px solid var(--wp--preset--color--accent-2);
+  border-radius: 10px;
+}
+
+.is-style-new-fedora-blue {
+  background-color: var(--wp--preset--color--accent-3-percent-10);
+  color: var(--wp--preset--color--accent-3);
+  border: 1px solid var(--wp--preset--color--accent-3);
+  border-radius: 10px;
+}
+
+.is-style-new-fedora-blue-box {
+  border: 1px solid var(--wp--preset--color--accent-3);
+  border-radius: 15px 0;
+  box-shadow: var(--wp--preset--color--accent-3) 6px 6px 0 0;
+}
+
+.is-style-freedom-purple {
+  background-color: var(--wp--preset--color--accent-4-percent-10);
+  color: var(--wp--preset--color--accent-4);
+  border: 1px solid var(--wp--preset--color--accent-4);
+  border-radius: 10px;
+}
+
+.is-style-friends-magenta {
+  background-color: var(--wp--preset--color--accent-5-percent-10);
+  color: var(--wp--preset--color--accent-5);
+  border: 1px solid var(--wp--preset--color--accent-5);
+  border-radius: 10px;
+}
+
+.is-style-features-orange {
+  background-color: var(--wp--preset--color--accent-7-percent-10);
+  color: var(--wp--preset--color--accent-7);
+  border: 1px solid var(--wp--preset--color--accent-7);
+  border-radius: 10px;
+}
+
+.is-style-first-green {
+  background-color: var(--wp--preset--color--accent-8-percent-10);
+  color: var(--wp--preset--color--accent-8);
+  border: 1px solid var(--wp--preset--color--accent-8);
+  border-radius: 10px;
+}
+
+.wp-block-buttons .is-style-dark-fedora-blue,
+.wp-block-buttons .is-style-fedora-blue,
+.wp-block-buttons .is-style-new-fedora-blue,
+.wp-block-buttons .is-style-new-fedora-blue-box,
+.wp-block-buttons .is-style-freedom-purple,
+.wp-block-buttons .is-style-friends-magenta,
+.wp-block-buttons .is-style-features-orange,
+.wp-block-buttons .is-style-first-green {
+
+  .wp-element-button {
+    background: none;
+    color: inherit;
+    border: 0;
+  }
+}
+
+.wp-block-buttons .is-style-dark-fedora-blue:hover,
+.wp-block-buttons .is-style-fedora-blue:hover,
+.wp-block-buttons .is-style-new-fedora-blue:hover,
+.wp-block-buttons .is-style-new-fedora-blue-box:hover,
+.wp-block-buttons .is-style-freedom-purple:hover,
+.wp-block-buttons .is-style-friends-magenta:hover,
+.wp-block-buttons .is-style-features-orange:hover,
+.wp-block-buttons .is-style-first-green:hover {
+  background-color: color-mix(in srgb, currentcolor 20%, transparent);
+
+  .wp-element-button {
+    background: none;
+    color: inherit;
+    border: 0;
+  }
+}
+
+

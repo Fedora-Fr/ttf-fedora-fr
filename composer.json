@@ -1,36 +1,40 @@
 {
-    "name": "fedora-fr/twentytwentythree-fedora-fr",
-    "description": "Fedora-Fr is designed on Twenty Twenty-Three, to take advantage of the new design tools introduced in WordPress 6.1.",
-    "license": [
-        "LGPL-2.1-only"
-    ],
-    "keywords": [
-        "wordpress"
-    ],
+    "name": "fedora-fr/ttf-borsalinux-fr",
+    "description": "WordPress Twenty Twenty Five child theme.",
     "authors": [
         {
             "name": "Guillaume Kulakowski",
             "email": "guillaume@kulakowski.fr"
-        },
-        {
-            "name": "Nicolas Berrehouc",
-            "email": "nberrehouc@free.fr"
         }
     ],
-    "autoload": {},
-    "require-dev": {
-        "squizlabs/php_codesniffer": "*",
-        "wp-coding-standards/wpcs": "dev-develop"
-    },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0"
+    },
     "scripts": {
-        "test:phpcs": "vendor/bin/phpcs --standard=WordPress *.php *.css",
         "test": [
-            "@test:phpcs"
+            "@phpcs"
+        ],
+        "test:all": [
+            "@phpcs",
+            "@npm:eslint",
+            "@npm:stylelint"
+        ],
+        "phpcs": [
+            "vendor/bin/phpcs -p -s"
+        ],
+        "npm:eslint": [
+            "npm run eslint"
+        ],
+        "npm:stylelint": [
+            "npm run stylelint"
+        ],
+        "phpcs:fix": [
+            "vendor/bin/phpcbf -p -s"
         ]
     }
 }

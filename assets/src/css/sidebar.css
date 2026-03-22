@@ -1,0 +1,27 @@
+.sidebar {
+  border-left: 1px solid var(--wp--preset--color--accent-9);
+  text-align: right;
+
+  h3 {
+    font-size: calc(var(--wp--preset--font-size--x-large) * 0.9);
+    margin: var(--wp--preset--spacing--40) 0 var(--wp--preset--spacing--20) 0;
+  }
+
+  p {
+    margin: var(--wp--preset--spacing--30) 0 0 0;
+    padding: 0;
+  }
+
+  ul {
+    margin: var(--wp--preset--spacing--20) 0 0 0;
+    list-style: none;
+
+    li {
+      margin-top: 0;
+    }
+  }
+  
+  a {
+      text-decoration: none;
+  }
+}

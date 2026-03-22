@@ -1,0 +1,8 @@
+{
+	"extends": ["plugin:@wordpress/eslint-plugin/esnext"],
+  "globals": {
+		"document": "readonly",
+		"setTimeout": "readonly",
+		"window": "readonly",
+  }
+}

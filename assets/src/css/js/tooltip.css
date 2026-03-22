@@ -1,0 +1,19 @@
+.custom-tooltip {
+  position: absolute;
+  z-index: 9999;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  background: var(--wp--preset--color--accent-3);
+  color: var(--wp--preset--color--base);
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  display: none;
+}
+
+.custom-tooltip.visible {
+  opacity: 1;
+  display: block;
+}
