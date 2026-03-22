@@ -18,6 +18,12 @@
   border-radius: 10px;
 }
 
+.is-style-fedora-blue-box {
+  border: 1px solid var(--wp--preset--color--accent-2);
+  border-radius: 15px 0;
+  box-shadow: var(--wp--preset--color--accent-2) 6px 6px 0 0;
+}
+
 .is-style-new-fedora-blue {
   background-color: var(--wp--preset--color--accent-3-percent-10);
   color: var(--wp--preset--color--accent-3);

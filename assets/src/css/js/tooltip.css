@@ -4,7 +4,7 @@
   padding: 6px 10px;
   border-radius: 6px;
   font-size: 0.85rem;
-  background: var(--wp--preset--color--accent-3);
+  background: var(--wp--preset--color--accent-1);
   color: var(--wp--preset--color--base);
   pointer-events: none;
   white-space: nowrap;
