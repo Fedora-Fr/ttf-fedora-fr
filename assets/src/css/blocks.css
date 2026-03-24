@@ -9,6 +9,14 @@
   border: 1px solid var(--wp--preset--color--accent-1);
   border-radius: 15px 0;
   box-shadow: var(--wp--preset--color--accent-1) 6px 6px 0 0;
+
+  &.wp-block-heading  {
+    font-weight: 700;
+  }
+
+  &h2 {
+    font-size: var(--wp--preset--font-size--large);
+  }
 }
 
 .is-style-fedora-blue {
@@ -22,6 +30,14 @@
   border: 1px solid var(--wp--preset--color--accent-2);
   border-radius: 15px 0;
   box-shadow: var(--wp--preset--color--accent-2) 6px 6px 0 0;
+  
+  &.wp-block-heading  {
+    font-weight: 700;
+  }
+
+  &h2 {
+    font-size: var(--wp--preset--font-size--large);
+  }
 }
 
 .is-style-new-fedora-blue {
@@ -35,6 +51,14 @@
   border: 1px solid var(--wp--preset--color--accent-3);
   border-radius: 15px 0;
   box-shadow: var(--wp--preset--color--accent-3) 6px 6px 0 0;
+
+  &.wp-block-heading  {
+    font-weight: 700;
+  }
+
+  &h2 {
+    font-size: var(--wp--preset--font-size--large);
+  }
 }
 
 .is-style-freedom-purple {

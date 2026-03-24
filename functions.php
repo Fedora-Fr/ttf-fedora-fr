@@ -78,35 +78,28 @@ function ttf_fedorafr_exclude_sticky_from_main_query( $query ) {
 }
 
 /**
- * RSS links from the HTML Header.
+ * Add mimes types
+ *
+ * @param array $mimes List of type mimes.
  */
-function fedorafr_rss() {
-	$url = get_bloginfo( 'url' );
-
-	// Disable built-in RSS from the HTML Header.
-	remove_action( 'wp_head', 'feed_links', 2 );
-	remove_action( 'wp_head', 'feed_links_extra', 3 );
-
-	if ( strpos( $url, 'planet' ) !== false ) {
-		add_action(
-			'wp_head',
-			function () {
-				echo '<link rel="alternate" type="application/rss+xml" title="RSS 2.0 Feed" href="' . esc_url( get_bloginfo( 'rss2_url' ) ) . '" />';
-			}
-		);
-	}
+function ttf_fedorafr_mimes( $mimes ) {
+	$mimes['svg']  = 'image/svg+xml';
+	$mimes['svgz'] = 'image/svg+xml';
+	return $mimes;
 }
+
+
 
 /*
  * --------------------------------------------------------- Actions and filters
  */
 // @see https://korben.info/accelerer-wordpress-styles-blocs-utilises.html
 add_filter( 'should_load_separate_core_block_assets', '__return_true' );
+add_filter( 'upload_mimes', 'ttf_fedorafr_mimes' );
 
 add_action( 'pre_get_posts', 'ttf_fedorafr_exclude_sticky_from_main_query' );
 add_action( 'wp_enqueue_scripts', 'ttf_fedorafr_enqueue_styles' );
 add_action( 'enqueue_block_assets', 'ttf_fedorafr_block_assets' );
 add_action( 'init', 'ttf_fedorafr_clean_wp_head' );
-add_action( 'init', 'fedorafr_rss' );
 
 add_menu_page( 'Reusable Blocks', 'Reusable Blocks', 'edit_posts', 'edit.php?post_type=wp_block', '', 'dashicons-editor-table', 22 );
