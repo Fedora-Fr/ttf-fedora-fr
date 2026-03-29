@@ -13,6 +13,14 @@
   display: none;
 }
 
+.theme-dark {
+
+  .custom-tooltip  {
+    background: var(--wp--preset--color--accent-3);
+    color: var(--wp--preset--color--base-forced);
+  }
+}
+
 .custom-tooltip.visible {
   opacity: 1;
   display: block;

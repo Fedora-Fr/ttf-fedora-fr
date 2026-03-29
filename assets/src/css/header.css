@@ -1,7 +1,20 @@
 .site-header {
-  color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--base-forced);
   background-color: var(--wp--preset--color--accent-1);
   background-image: linear-gradient(to right, var(--wp--preset--color--accent-3), var(--wp--preset--color--accent-2));
   font-family: var(--wp--preset--font-family--montserrat);
   font-weight: 700;
+
+  .wp-block-tabor-dark-mode-toggle {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1rem;
+  }
+}
+
+.theme-dark {
+
+  .site-header {
+    background-image: linear-gradient(to right, var(--wp--preset--color--accent-1), var(--wp--preset--color--accent-2));
+  }
 }

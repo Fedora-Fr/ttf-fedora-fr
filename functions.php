@@ -88,8 +88,6 @@ function ttf_fedorafr_mimes( $mimes ) {
 	return $mimes;
 }
 
-
-
 /*
  * --------------------------------------------------------- Actions and filters
  */
@@ -101,5 +99,3 @@ add_action( 'pre_get_posts', 'ttf_fedorafr_exclude_sticky_from_main_query' );
 add_action( 'wp_enqueue_scripts', 'ttf_fedorafr_enqueue_styles' );
 add_action( 'enqueue_block_assets', 'ttf_fedorafr_block_assets' );
 add_action( 'init', 'ttf_fedorafr_clean_wp_head' );
-
-add_menu_page( 'Reusable Blocks', 'Reusable Blocks', 'edit_posts', 'edit.php?post_type=wp_block', '', 'dashicons-editor-table', 22 );

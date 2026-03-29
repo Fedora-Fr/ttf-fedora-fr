@@ -4,7 +4,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	document.body.appendChild( tooltip );
 
 	const elements = document.querySelectorAll(
-		'[title], img[alt], abbr[title]'
+		'[aria-label], [title], img[alt], abbr[title]'
 	);
 
 	elements.forEach( ( el ) => {

@@ -1,0 +1,18 @@
+/* Dark styles */
+:root {
+  --wp--preset--color--base-forced: #fff;
+  --wp--preset--color--contrast-forced: #000;
+}
+
+.theme-dark body {
+  --wp--preset--color--base: #111827;
+  --wp--preset--color--base2: #1f2937;
+  --wp--preset--color--contrast: #d1d5db;
+  --wp--preset--color--accent-9: var(--wp--preset--color--base2);
+
+  .is-style-dark-fedora-blue-box,
+  .is-style-fedora-blue-box,
+  .is-style-new-fedora-blue-box {
+    background-color: var(--wp--preset--color--base2);
+  }
+}

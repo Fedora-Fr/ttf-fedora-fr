@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(dark-mode.css);
 @import url(header.css);
 @import url(footer.css);
 @import url(sidebar.css);
@@ -75,10 +76,6 @@ body.page:not(.home) .entry-content{
     padding-top: var(--wp--preset--spacing--20);
     text-decoration: underline;
   }
-}
-
-body.home .wp-block-post-title {
-	display:none;
 }
 
 :root {
