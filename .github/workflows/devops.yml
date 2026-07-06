@@ -20,7 +20,7 @@ jobs:
         node-version: ['25']
     steps:
     - name: Git checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v6
       with:
@@ -43,7 +43,7 @@ jobs:
         php-version: ['8.5']
     steps:
     - name: Git checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
     - name: Use PHP ${{ matrix.php-version }}
       uses: shivammathur/setup-php@v2
       with:
@@ -71,7 +71,7 @@ jobs:
     name: MarkdownLint
     steps:
     - name: Git checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
     - name: markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v3.5.0
       with:
