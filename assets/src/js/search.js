@@ -41,7 +41,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
 		// remove focus from input
 		try {
 			input.blur();
-		} catch ( e ) {}
+		} catch {}
 	}
 
 	// Button click: open search
