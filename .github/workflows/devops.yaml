@@ -20,7 +20,7 @@ jobs:
         node-version: [22.X, 24.X, 26.X]
     steps:
     - name: Git checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     # Setup Node.js
     - name: Install pnpm
@@ -51,7 +51,7 @@ jobs:
         php-version: ['8.5']
     steps:
     - name: Git checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       # Setup PHP
     - name: Use PHP ${{ matrix.php-version }}
       uses: shivammathur/setup-php@v2
@@ -85,7 +85,7 @@ jobs:
     name: MarkdownLint
     steps:
     - name: Git checkout
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
 
     # Run markdownlint-cli
     - name: markdownlint-cli
