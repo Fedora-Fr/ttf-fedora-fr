@@ -1,40 +1,41 @@
 {
-    "name": "fedora-fr/ttf-borsalinux-fr",
-    "description": "WordPress Twenty Twenty Five child theme.",
-    "authors": [
-        {
-            "name": "Guillaume Kulakowski",
-            "email": "guillaume@kulakowski.fr"
-        }
-    ],
-    "config": {
-        "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true
-        }
-    },
-    "require-dev": {
-        "wp-coding-standards/wpcs": "^3.0"
-    },
-    "scripts": {
-        "test": [
-            "@phpcs"
-        ],
-        "test:all": [
-            "@phpcs",
-            "@npm:eslint",
-            "@npm:stylelint"
-        ],
-        "phpcs": [
-            "vendor/bin/phpcs -p -s"
-        ],
-        "npm:eslint": [
-            "npm run eslint"
-        ],
-        "npm:stylelint": [
-            "npm run stylelint"
-        ],
-        "phpcs:fix": [
-            "vendor/bin/phpcbf -p -s"
-        ]
-    }
+	"name": "fedora-fr/ttf-borsalinux-fr",
+	"description": "WordPress Twenty Twenty Five child theme.",
+	"authors": [
+		{
+			"name": "Guillaume Kulakowski",
+			"email": "guillaume@kulakowski.fr"
+		}
+	],
+	"license": "GPL-3.0-only",
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.0"
+	},
+	"scripts": {
+		"test": [
+			"@phpcs"
+		],
+		"test:all": [
+			"@phpcs",
+			"@pnpm:eslint",
+			"@pnpm:stylelint"
+		],
+		"phpcs": [
+			"vendor/bin/phpcs -p -s"
+		],
+		"pnpm:eslint": [
+			"pnpm test:eslint"
+		],
+		"pnpm:stylelint": [
+			"pnpm test:stylelint"
+		],
+		"phpcs:fix": [
+			"vendor/bin/phpcbf -p -s"
+		]
+	}
 }

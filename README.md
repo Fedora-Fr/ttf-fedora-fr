@@ -35,14 +35,14 @@ The theme supports international typography, multiple color palettes, and ensure
 Make sure you have Node.js installed to manage frontend dependencies.
 
 ```bash
-npm install
+pnpm install
 composer install
 ```
 
 ### Available Scripts
 
-- `npm run dev`: Starts development mode with file watching.
-- `npm run build`: Builds assets for production.
-- `npm run preview`: Previews the build.
-- `npm run eslint`: Check code with eslint.
-- `npm run stylelint`: Check code with stylelint.
+- `pnpm run dev`: Starts development mode with file watching.
+- `pnpm run build`: Builds assets for production.
+- `pnpm run preview`: Previews the build.
+- `pnpm run eslint`: Check code with eslint.
+- `pnpm run stylelint`: Check code with stylelint.

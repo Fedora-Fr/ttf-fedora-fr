@@ -10,9 +10,24 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    target-branch: "develop"
+    commit-message:
+      prefix: "⬆️ [Actions] "
 
-  # Maintain dependencies for pip
+  # Maintain dependencies for Composer
+  - package-ecosystem: "composer"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    target-branch: "develop"
+    commit-message:
+      prefix: "⬆️ [PHP] "
+
+  # Maintain dependencies for Node.js packages
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    target-branch: "develop"
+    commit-message:
+      prefix: "⬆️ [Node.js] "
