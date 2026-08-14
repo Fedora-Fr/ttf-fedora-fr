@@ -34,7 +34,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
 
-    # Instal & run tasks
+    # Install & run tasks
     - name: Install dependencies
       run: pnpm install --frozen-lockfile
     - name: Run eslint (*.js)
@@ -68,7 +68,7 @@ jobs:
         key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
         restore-keys: ${{ runner.os }}-composer-
 
-    # Instal & run tasks
+    # Install & run tasks
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
     - name: Install dependencies
