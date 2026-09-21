@@ -19,8 +19,8 @@ importers:
         specifier: ^25.10.0
         version: 25.10.0(@babel/core@7.29.7(supports-color@10.2.2))(@typescript-eslint/eslint-plugin@8.68.0(@typescript-eslint/parser@8.68.0(eslint@10.10.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.10.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(@typescript-eslint/parser@8.68.0(eslint@10.10.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.10.0(supports-color@10.2.2))(postcss@8.5.28)(prettier@3.9.8)(react-dom@19.2.8(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))(supports-color@10.2.2)(typescript@6.0.3)(vite@8.3.0)
       '@wordpress/prettier-config':
-        specifier: ^4.54.0
-        version: 4.54.0(prettier@3.9.8)
+        specifier: ^4.55.0
+        version: 4.55.0(prettier@3.9.8)
       '@wordpress/stylelint-config':
         specifier: ^24.3.0
         version: 24.3.0(postcss@8.5.28)(react-dom@19.2.8(react@18.3.1))(react@18.3.1)(stylelint-scss@6.14.0(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3)))(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))(vite@8.3.0)
@@ -1191,8 +1191,8 @@ packages:
       '@types/react':
         optional: true
 
-  '@wordpress/prettier-config@4.54.0':
-    resolution: {integrity: sha512-uwiRJ3S2d/T/+ZwB2HjehVfu3rw+LYBjSiJcE/CSxbBC7eobtQ3WZsNsUc5p1M7Be6orpowtl2wtAFg/bUDJuA==}
+  '@wordpress/prettier-config@4.55.0':
+    resolution: {integrity: sha512-rNC37BQ+Z/JkHWJ6iBNNAx96ccg2pG+8AUeav0VfxkDtd4RodbNLVpZp5Zm8wBjmZOvBkPtEqoASGTR14pNi6A==}
     engines: {node: '>=18.12.0', npm: '>=8.19.2'}
     peerDependencies:
       prettier: '>=3'
@@ -4248,7 +4248,7 @@ snapshots:
       '@eslint-community/eslint-plugin-eslint-comments': 4.7.2(eslint@10.10.0(supports-color@10.2.2))
       '@eslint/compat': 2.1.0(eslint@10.10.0(supports-color@10.2.2))
       '@wordpress/babel-preset-default': 8.54.0(supports-color@10.2.2)
-      '@wordpress/prettier-config': 4.54.0(prettier@3.9.8)
+      '@wordpress/prettier-config': 4.55.0(prettier@3.9.8)
       '@wordpress/theme': 2.0.0(postcss@8.5.28)(react-dom@19.2.8(react@18.3.1))(react@18.3.1)(stylelint@17.15.0(supports-color@10.2.2)(typescript@6.0.3))(vite@8.3.0)
       cosmiconfig: 7.1.0
       eslint: 10.10.0(supports-color@10.2.2)
@@ -4300,7 +4300,7 @@ snapshots:
     dependencies:
       '@wordpress/i18n': 6.27.0
 
-  '@wordpress/prettier-config@4.54.0(prettier@3.9.8)':
+  '@wordpress/prettier-config@4.55.0(prettier@3.9.8)':
     dependencies:
       prettier: 3.9.8
 
